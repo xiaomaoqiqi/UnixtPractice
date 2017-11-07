@@ -1,0 +1,237 @@
+xiaomaoqiqi:~/workspace (master) $ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        unixstuff/biglist
+        unixstuff/list1
+        unixstuff/list2
+        unixstuff/names.txt
+        unixstuff/slist
+        unixstuff/tutorialFour
+        unixstuff/tutorialThree
+
+nothing added to commit but untracked files present (use "git add" to track)
+xiaomaoqiqi:~/workspace (master) $ git commit -m "tutorialFour"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+        unixstuff/biglist
+        unixstuff/list1
+        unixstuff/list2
+        unixstuff/names.txt
+        unixstuff/slist
+        unixstuff/tutorialFour
+        unixstuff/tutorialThree
+
+nothing added to commit but untracked files present
+xiaomaoqiqi:~/workspace (master) $ git add -A
+xiaomaoqiqi:~/workspace (master) $ git commit -m "turorialFour"
+[master 3054012] turorialFour
+ 7 files changed, 265 insertions(+)
+ create mode 100644 unixstuff/biglist
+ create mode 100644 unixstuff/list1
+ create mode 100644 unixstuff/list2
+ create mode 100644 unixstuff/names.txt
+ create mode 100644 unixstuff/slist
+ create mode 100644 unixstuff/tutorialFour
+ create mode 100644 unixstuff/tutorialThree
+xiaomaoqiqi:~/workspace (master) $ git push
+Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+Counting objects: 10, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (10/10), 3.31 KiB | 3.31 MiB/s, done.
+Total 10 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:xiaomaoqiqi/UnixtPractice.git
+   5bf947a..3054012  master -> master
+xiaomaoqiqi:~/workspace (master) $ clear
+xiaomaoqiqi:~/workspace (master) $ cd unixstuff/
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ls -l
+total 68
+drwxr-xr-x 2 ubuntu ubuntu  4096 Nov  7 16:33 backups/
+-rw-r--r-- 1 ubuntu ubuntu    66 Nov  7 18:23 biglist
+-rw-r--r-- 1 ubuntu ubuntu  1272 Nov  7 16:29 hello-world.html
+-rw-r--r-- 1 ubuntu ubuntu    37 Nov  7 18:22 list1
+-rw-r--r-- 1 ubuntu ubuntu    29 Nov  7 18:21 list2
+-rw-r--r-- 1 ubuntu ubuntu     0 Nov  7 18:27 names.txt
+-rw-r--r-- 1 ubuntu ubuntu  7769 Nov  7 16:30 science.txt
+-rw-r--r-- 1 ubuntu ubuntu    66 Nov  7 18:26 slist
+-rw-r--r-- 1 ubuntu ubuntu  6415 Nov  7 19:35 tutorialFour
+-rw-r--r-- 1 ubuntu ubuntu  3751 Nov  7 16:23 tutorialOne
+-rw-r--r-- 1 ubuntu ubuntu  2430 Nov  7 19:23 tutorialThree
+-rw-r--r-- 1 ubuntu ubuntu 17837 Nov  7 18:11 tutorialTwo
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ls -lg
+total 68
+drwxr-xr-x 2 ubuntu  4096 Nov  7 16:33 backups/
+-rw-r--r-- 1 ubuntu    66 Nov  7 18:23 biglist
+-rw-r--r-- 1 ubuntu  1272 Nov  7 16:29 hello-world.html
+-rw-r--r-- 1 ubuntu    37 Nov  7 18:22 list1
+-rw-r--r-- 1 ubuntu    29 Nov  7 18:21 list2
+-rw-r--r-- 1 ubuntu     0 Nov  7 18:27 names.txt
+-rw-r--r-- 1 ubuntu  7769 Nov  7 16:30 science.txt
+-rw-r--r-- 1 ubuntu    66 Nov  7 18:26 slist
+-rw-r--r-- 1 ubuntu  6415 Nov  7 19:35 tutorialFour
+-rw-r--r-- 1 ubuntu  3751 Nov  7 16:23 tutorialOne
+-rw-r--r-- 1 ubuntu  2430 Nov  7 19:23 tutorialThree
+-rw-r--r-- 1 ubuntu 17837 Nov  7 18:11 tutorialTwo
+xiaomaoqiqi:~/workspace/unixstuff (master) $ chmod go-rwx biglist
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ls -l
+total 68
+drwxr-xr-x 2 ubuntu ubuntu  4096 Nov  7 16:33 backups/
+-rw------- 1 ubuntu ubuntu    66 Nov  7 18:23 biglist
+-rw-r--r-- 1 ubuntu ubuntu  1272 Nov  7 16:29 hello-world.html
+-rw-r--r-- 1 ubuntu ubuntu    37 Nov  7 18:22 list1
+-rw-r--r-- 1 ubuntu ubuntu    29 Nov  7 18:21 list2
+-rw-r--r-- 1 ubuntu ubuntu     0 Nov  7 18:27 names.txt
+-rw-r--r-- 1 ubuntu ubuntu  7769 Nov  7 16:30 science.txt
+-rw-r--r-- 1 ubuntu ubuntu    66 Nov  7 18:26 slist
+-rw-r--r-- 1 ubuntu ubuntu  6415 Nov  7 19:35 tutorialFour
+-rw-r--r-- 1 ubuntu ubuntu  3751 Nov  7 16:23 tutorialOne
+-rw-r--r-- 1 ubuntu ubuntu  2430 Nov  7 19:23 tutorialThree
+-rw-r--r-- 1 ubuntu ubuntu 17837 Nov  7 18:11 tutorialTwo
+xiaomaoqiqi:~/workspace/unixstuff (master) $ chmod a+rw biglist
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ls -l
+total 68
+drwxr-xr-x 2 ubuntu ubuntu  4096 Nov  7 16:33 backups/
+-rw-rw-rw- 1 ubuntu ubuntu    66 Nov  7 18:23 biglist
+-rw-r--r-- 1 ubuntu ubuntu  1272 Nov  7 16:29 hello-world.html
+-rw-r--r-- 1 ubuntu ubuntu    37 Nov  7 18:22 list1
+-rw-r--r-- 1 ubuntu ubuntu    29 Nov  7 18:21 list2
+-rw-r--r-- 1 ubuntu ubuntu     0 Nov  7 18:27 names.txt
+-rw-r--r-- 1 ubuntu ubuntu  7769 Nov  7 16:30 science.txt
+-rw-r--r-- 1 ubuntu ubuntu    66 Nov  7 18:26 slist
+-rw-r--r-- 1 ubuntu ubuntu  6415 Nov  7 19:35 tutorialFour
+-rw-r--r-- 1 ubuntu ubuntu  3751 Nov  7 16:23 tutorialOne
+-rw-r--r-- 1 ubuntu ubuntu  2430 Nov  7 19:23 tutorialThree
+-rw-r--r-- 1 ubuntu ubuntu 17837 Nov  7 18:11 tutorialTwo
+xiaomaoqiqi:~/workspace/unixstuff (master) $ chmod g+wx science.txt 
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ls -l
+total 68
+drwxr-xr-x 2 ubuntu ubuntu  4096 Nov  7 16:33 backups/
+-rw-rw-rw- 1 ubuntu ubuntu    66 Nov  7 18:23 biglist
+-rw-r--r-- 1 ubuntu ubuntu  1272 Nov  7 16:29 hello-world.html
+-rw-r--r-- 1 ubuntu ubuntu    37 Nov  7 18:22 list1
+-rw-r--r-- 1 ubuntu ubuntu    29 Nov  7 18:21 list2
+-rw-r--r-- 1 ubuntu ubuntu     0 Nov  7 18:27 names.txt
+-rw-rwxr-- 1 ubuntu ubuntu  7769 Nov  7 16:30 science.txt*
+-rw-r--r-- 1 ubuntu ubuntu    66 Nov  7 18:26 slist
+-rw-r--r-- 1 ubuntu ubuntu  6415 Nov  7 19:35 tutorialFour
+-rw-r--r-- 1 ubuntu ubuntu  3751 Nov  7 16:23 tutorialOne
+-rw-r--r-- 1 ubuntu ubuntu  2430 Nov  7 19:23 tutorialThree
+-rw-r--r-- 1 ubuntu ubuntu 17837 Nov  7 18:11 tutorialTwo
+xiaomaoqiqi:~/workspace/unixstuff (master) $ chmod -x backups/
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ls -l
+total 68
+drw-r--r-- 2 ubuntu ubuntu  4096 Nov  7 16:33 backups/
+-rw-rw-rw- 1 ubuntu ubuntu    66 Nov  7 18:23 biglist
+-rw-r--r-- 1 ubuntu ubuntu  1272 Nov  7 16:29 hello-world.html
+-rw-r--r-- 1 ubuntu ubuntu    37 Nov  7 18:22 list1
+-rw-r--r-- 1 ubuntu ubuntu    29 Nov  7 18:21 list2
+-rw-r--r-- 1 ubuntu ubuntu     0 Nov  7 18:27 names.txt
+-rw-rwxr-- 1 ubuntu ubuntu  7769 Nov  7 16:30 science.txt*
+-rw-r--r-- 1 ubuntu ubuntu    66 Nov  7 18:26 slist
+-rw-r--r-- 1 ubuntu ubuntu  6415 Nov  7 19:35 tutorialFour
+-rw-r--r-- 1 ubuntu ubuntu  3751 Nov  7 16:23 tutorialOne
+-rw-r--r-- 1 ubuntu ubuntu  2430 Nov  7 19:23 tutorialThree
+-rw-r--r-- 1 ubuntu ubuntu 17837 Nov  7 18:11 tutorialTwo
+xiaomaoqiqi:~/workspace/unixstuff (master) $ chmod +x backups/
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ls -l
+total 68
+drwxr-xr-x 2 ubuntu ubuntu  4096 Nov  7 16:33 backups/
+-rw-rw-rw- 1 ubuntu ubuntu    66 Nov  7 18:23 biglist
+-rw-r--r-- 1 ubuntu ubuntu  1272 Nov  7 16:29 hello-world.html
+-rw-r--r-- 1 ubuntu ubuntu    37 Nov  7 18:22 list1
+-rw-r--r-- 1 ubuntu ubuntu    29 Nov  7 18:21 list2
+-rw-r--r-- 1 ubuntu ubuntu     0 Nov  7 18:27 names.txt
+-rw-rwxr-- 1 ubuntu ubuntu  7769 Nov  7 16:30 science.txt*
+-rw-r--r-- 1 ubuntu ubuntu    66 Nov  7 18:26 slist
+-rw-r--r-- 1 ubuntu ubuntu  6415 Nov  7 19:35 tutorialFour
+-rw-r--r-- 1 ubuntu ubuntu  3751 Nov  7 16:23 tutorialOne
+-rw-r--r-- 1 ubuntu ubuntu  2430 Nov  7 19:23 tutorialThree
+-rw-r--r-- 1 ubuntu ubuntu 17837 Nov  7 18:11 tutorialTwo
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ps
+    PID TTY          TIME CMD
+   7573 pts/1    00:00:00 bash
+   7574 pts/1    00:00:00 bash
+   8145 pts/1    00:00:00 ps
+xiaomaoqiqi:~/workspace/unixstuff (master) $ sleep 10
+xiaomaoqiqi:~/workspace/unixstuff (master) $ sleep 10 &
+[1] 8155
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ps
+    PID TTY          TIME CMD
+   7573 pts/1    00:00:00 bash
+   7574 pts/1    00:00:00 bash
+   8155 pts/1    00:00:00 sleep
+   8159 pts/1    00:00:00 ps
+xiaomaoqiqi:~/workspace/unixstuff (master) $ sleep 1000
+        
+
+^C[1]+  Done                    sleep 10
+
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ps
+    PID TTY          TIME CMD
+   7573 pts/1    00:00:00 bash
+   7574 pts/1    00:00:00 bash
+   8171 pts/1    00:00:00 ps
+xiaomaoqiqi:~/workspace/unixstuff (master) $ sleep 10000
+^C
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ps
+    PID TTY          TIME CMD
+   7573 pts/1    00:00:00 bash
+   7574 pts/1    00:00:00 bash
+   8180 pts/1    00:00:00 ps
+xiaomaoqiqi:~/workspace/unixstuff (master) $ sleep 1000 &
+[1] 8184
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ps
+    PID TTY          TIME CMD
+   7573 pts/1    00:00:00 bash
+   7574 pts/1    00:00:00 bash
+   8184 pts/1    00:00:00 sleep
+   8188 pts/1    00:00:00 ps
+xiaomaoqiqi:~/workspace/unixstuff (master) $ kill &1
+[2] 8192
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+bash: 1: command not found
+[2]+  Exit 2                  kill
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ps
+    PID TTY          TIME CMD
+   7573 pts/1    00:00:00 bash
+   7574 pts/1    00:00:00 bash
+   8184 pts/1    00:00:00 sleep
+   8198 pts/1    00:00:00 ps
+xiaomaoqiqi:~/workspace/unixstuff (master) $ kill %1
+[1]+  Terminated              sleep 1000
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ps
+    PID TTY          TIME CMD
+   7573 pts/1    00:00:00 bash
+   7574 pts/1    00:00:00 bash
+   8206 pts/1    00:00:00 ps
+xiaomaoqiqi:~/workspace/unixstuff (master) $ sleep 10000 &
+[1] 8211
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ps
+    PID TTY          TIME CMD
+   7573 pts/1    00:00:00 bash
+   7574 pts/1    00:00:00 bash
+   8211 pts/1    00:00:00 sleep
+   8215 pts/1    00:00:00 ps
+xiaomaoqiqi:~/workspace/unixstuff (master) $ kill 8211
+[1]+  Terminated              sleep 10000
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ps
+    PID TTY          TIME CMD
+   7573 pts/1    00:00:00 bash
+   7574 pts/1    00:00:00 bash
+   8222 pts/1    00:00:00 ps
+xiaomaoqiqi:~/workspace/unixstuff (master) $ touch tutorialFive
+xiaomaoqiqi:~/workspace/unixstuff (master) $ c9  turorialFive'
+                                                              > 
+> :q
+> 
+> bash: unexpected EOF while looking for matching `''
+bash: syntax error: unexpected end of file
+xiaomaoqiqi:~/workspace/unixstuff (master) $ c9 tutorialFive
+xiaomaoqiqi:~/workspace/unixstuff (master) $ 
