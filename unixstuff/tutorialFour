@@ -1,0 +1,123 @@
+
+
+
+
+
+
+
+
+WC(1)                                     User Commands                                    WC(1)
+
+NAME
+       wc - print newline, word, and byte counts for each file
+
+SYNOPSIS
+       wc [OPTION]... [FILE]...
+       wc [OPTION]... --files0-from=F
+
+DESCRIPTION
+       Print  newline,  word,  and  byte counts for each FILE, and a total line if more than one
+       FILE is specified.  With no FILE, or when FILE is -, read standard input.  A  word  is  a
+       non-zero-length  sequence  of characters delimited by white space.  The options below may
+       be used to select which counts are printed, always in the following order: newline, word,
+       character, byte, maximum line length.
+
+       -c, --bytes
+              print the byte counts
+
+       -m, --chars
+              print the character counts
+xiaomaoqiqi:~/workspace (master) $ cd unixstuff/
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ls list*
+list1  list2
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ls *list
+biglist  slist
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ls ?list
+slist
+xiaomaoqiqi:~/workspace/unixstuff (master) $ man wc
+xiaomaoqiqi:~/workspace/unixstuff (master) $ whatis wc
+wc (1)               - print newline, word, and byte counts for each file
+xiaomaoqiqi:~/workspace/unixstuff (master) $ apropos copy
+bcopy (3)            - copy byte sequence
+BIO_ssl_copy_session_id (3ssl) - SSL BIO
+BN_copy (3ssl)       - copy BIGNUMs
+BN_dup (3ssl)        - copy BIGNUMs
+BN_MONT_CTX_copy (3ssl) - Montgomery multiplication
+COPY (7)             - copy data between a file and a table
+copysign (3)         - copy sign of a number
+copysignf (3)        - copy sign of a number
+copysignl (3)        - copy sign of a number
+cp (1)               - copy files and directories
+cpgr (8)             - copy with locking the given file to the password or group file
+cpio (1)             - copy files to and from archives
+cppw (8)             - copy with locking the given file to the password or group file
+cvs-switchroot (1)   - change repository or tag in a cvs working copy
+dd (1)               - convert and copy a file
+debconf-copydb (1)   - copy a debconf database
+EVP_MD_CTX_copy (3ssl) - EVP digest routines
+EVP_MD_CTX_copy_ex (3ssl) - EVP digest routines
+EVP_PKEY_copy_parameters (3ssl) - public key parameter and comparison functions
+FcCacheCopySet (3)   - Returns a copy of the fontset from cache
+FcCharSetCopy (3)    - Copy a charset
+FcLangSetCopy (3)    - copy a langset object
+FcMatrixCopy (3)     - Copy a matrix
+FcPatternDuplicate (3) - Copy a pattern
+FcStrCopy (3)        - duplicate a string
+FcStrCopyFilename (3) - create a complete path from a filename
+FcValueSave (3)      - Copy a value
+getunwind (2)        - copy the unwind data to caller's buffer
+getutmp (3)          - copy utmp structure to utmpx, and vice versa
+getutmpx (3)         - copy utmp structure to utmpx, and vice versa
+git-checkout-index (1) - Copy files from the index to the working tree
+install (1)          - copy files and set attributes
+memccpy (3)          - copy memory area
+memcpy (3)           - copy memory area
+memmove (3)          - copy memory area
+mempcpy (3)          - copy memory area
+mysqlhotcopy (1)     - a database backup program
+objcopy (1)          - copy and translate object files
+ompi-iof (1)         - Displays a copy of the output streams from a process.
+orte-iof (1)         - Displays a copy of the output streams from a process.
+pcre16_copy_named_substring (3) - Perl-compatible regular expressions
+pcre16_copy_substring (3) - Perl-compatible regular expressions
+pcre_copy_named_substring (3) - Perl-compatible regular expressions
+pcre_copy_substring (3) - Perl-compatible regular expressions
+rcp (1)              - secure copy (remote file copy program)
+rsync (1)            - a fast, versatile, remote (and local) file-copying tool
+scp (1)              - secure copy (remote file copy program)
+ssh-copy-id (1)      - use locally available keys to authorise logins on a remote machine
+stpcpy (3)           - copy a string returning a pointer to its end
+stpncpy (3)          - copy a fixed-size string, returning a pointer to its end
+strcpy (3)           - copy a string
+strncpy (3)          - copy a string
+svn-clean (1)        - Wipes out unversioned files from Subversion working copy
+SVN::Wc (3perl)      - Subversion working copy functions
+svnversion (1)       - Produce a compact version identifier for a working copy.
+va_copy (3)          - variable argument lists
+wcpcpy (3)           - copy a wide-character string, returning a pointer to its end
+wcpncpy (3)          - copy a fixed-size string of wide characters, returning a pointer to its end
+wcscpy (3)           - copy a wide-character string
+wcsncpy (3)          - copy a fixed-size string of wide characters
+wmemcpy (3)          - copy an array of wide-characters
+wmemmove (3)         - copy an array of wide-characters
+wmempcpy (3)         - copy memory area
+x86_64-linux-gnu-objcopy (1) - copy and translate object files
+XColor (3)           - create, copy, or destroy colormaps and color structure
+XCopyArea (3)        - copy areas
+XCopyColormapAndFree (3) - create, copy, or destroy colormaps and color structure
+XCopyGC (3)          - create or free graphics contexts and graphics context structure
+XCopyPlane (3)       - copy areas
+XCreateColormap (3)  - create, copy, or destroy colormaps and color structure
+XFreeColormap (3)    - create, copy, or destroy colormaps and color structure
+XkbChangeMap (3)     - Update only partial components of a keyboard description, modify the appr...
+XkbCopyKeyType (3)   - Copy one XkbKeyTypeRec structures
+XkbCopyKeyTypes (3)  - Copy more than one XkbKeyTypeRec structure
+XkbGetControlsChanges (3) - Updates a local copy of a keyboard description with the changes prev...
+XkbGetIndicatorChanges (3) - Updates a local copy of the keyboard description with the actual va...
+XkbGetNameChanges (3) - Update the local copy of the keyboard description with the actual values...
+XkbSetControls (3)   - Copies changes to the X server based on a modified ctrls structure in a l...
+XkbSetIndicatorMap (3) - Downloads the changes to the server based on modifications to a local c...
+zmq_msg_copy (3)     - copy content of a message to another message
+xiaomaoqiqi:~/workspace/unixstuff (master) $ touch tutorialFour
+xiaomaoqiqi:~/workspace/unixstuff (master) $ c9 tutorialFour
+xiaomaoqiqi:~/workspace/unixstuff (master) $ 

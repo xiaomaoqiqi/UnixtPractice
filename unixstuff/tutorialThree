@@ -1,0 +1,112 @@
+xiaomaoqiqi:~/workspace (master) $ cat
+she is a girl 
+she is a girl 
+
+
+xiaomaoqiqi:~/workspace (master) $ cd unixstuff/
+xiaomaoqiqi:~/workspace/unixstuff (master) $ ls
+backups/  hello-world.html  science.txt  tutorialOne  tutorialTwo
+xiaomaoqiqi:~/workspace/unixstuff (master) $ cat >list1
+Pear
+banana
+apple
+xiaomaoqiqi:~/workspace/unixstuff (master) $ cat list1
+Pear
+banana
+apple
+xiaomaoqiqi:~/workspace/unixstuff (master) $ cat >list2
+orange
+plum
+mango
+grapefruit
+xiaomaoqiqi:~/workspace/unixstuff (master) $ cat list2
+orange
+plum
+mango
+grapefruit
+xiaomaoqiqi:~/workspace/unixstuff (master) $ cat >>list1
+peach
+grape
+orange
+xiaomaoqiqi:~/workspace/unixstuff (master) $ cat list1
+Pear
+banana
+apple
+peach
+grape
+orange
+xiaomaoqiqi:~/workspace/unixstuff (master) $ cat list1 list2 > biglist
+xiaomaoqiqi:~/workspace/unixstuff (master) $ cat biglist
+Pear
+banana
+apple
+peach
+grape
+orange
+orange
+plum
+mango
+grapefruit
+xiaomaoqiqi:~/workspace/unixstuff (master) $ sort
+dog
+cat
+bird
+ape
+ape
+bird
+cat
+dog
+xiaomaoqiqi:~/workspace/unixstuff (master) $ sort < biglist
+                                                           Pear
+apple
+banana
+grape
+grapefruit
+mango
+orange
+orange
+peach
+plum
+xiaomaoqiqi:~/workspace/unixstuff (master) $ sort < biglist >slist
+xiaomaoqiqi:~/workspace/unixstuff (master) $ c9 slist
+xiaomaoqiqi:~/workspace/unixstuff (master) $ cat slist
+Pear
+apple
+banana
+grape
+grapefruit
+mango
+orange
+orange
+peach
+plum
+xiaomaoqiqi:~/workspace/unixstuff (master) $ who
+xiaomaoqiqi:~/workspace/unixstuff (master) $ who > names.txt
+xiaomaoqiqi:~/workspace/unixstuff (master) $ sort <names.txt
+xiaomaoqiqi:~/workspace/unixstuff (master) $ who|sort
+xiaomaoqiqi:~/workspace/unixstuff (master) $ who| wc -1
+wc: invalid option -- '1'
+Try 'wc --help' for more information.
+xiaomaoqiqi:~/workspace/unixstuff (master) $ who | wc -l
+0
+xiaomaoqiqi:~/workspace/unixstuff (master) $ cat|sort -l 'p' list1
+sort: invalid option -- 'l'
+Try 'sort --help' for more information.
+
+xiaomaoqiqi:~/workspace/unixstuff (master) $ sort|cat -l 'p' list1
+cat: invalid option -- 'l'
+Try 'cat --help' for more information.
+
+q
+:q
+
+xiaomaoqiqi:~/workspace/unixstuff (master) $ cat list1 list2|grep p|sort
+apple
+grape
+grapefruit
+peach
+plum
+xiaomaoqiqi:~/workspace/unixstuff (master) $ cat history >tutorialThree
+cat: history: No such file or directory
+xiaomaoqiqi:~/workspace/unixstuff (master) $ c9 tutorialThree 
+xiaomaoqiqi:~/workspace/unixstuff (master) $ 
